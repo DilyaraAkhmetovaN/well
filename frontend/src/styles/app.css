@@ -1,0 +1,19 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #1f2937; background: #f3f4f6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.nav { background: #0f172a; color: #fff; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+.nav nav { display: flex; gap: 8px; align-items: center; }
+.nav a, .nav button { color: #fff; background: #334155; border: 0; padding: 8px 12px; border-radius: 8px; text-decoration: none; cursor: pointer; }
+.main { max-width: 1100px; margin: 20px auto; padding: 0 16px; }
+.layout { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; }
+.card { background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+form { display: flex; flex-direction: column; gap: 10px; }
+input, textarea, select, button { padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; }
+button { background: #2563eb; color: white; border: none; cursor: pointer; }
+.error { color: #b91c1c; }
+.ok { color: #15803d; }
+.toolbar { display: flex; gap: 8px; margin-bottom: 10px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid #e2e8f0; padding: 8px; text-align: left; }
+.actions { display: flex; gap: 6px; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
