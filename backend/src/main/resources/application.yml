@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/wellness
+    username: wellness
+    password: wellness
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  sql:
+    init:
+      mode: always
+app:
+  jwt:
+    secret: 1234567890123456789012345678901234567890123456789012345678901234
+    expiration-ms: 86400000
+logging:
+  level:
+    root: INFO
+    com.wellness: DEBUG
+server:
+  port: 8080
